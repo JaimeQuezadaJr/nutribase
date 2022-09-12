@@ -1,6 +1,6 @@
 const mongoose = require('mongoose');
 
-const mongoURI = 'mongodb://localhost/wellness-plus-new';
+const mongoURI = 'mongodb://localhost/nutribase';
 
 mongoose.connect(mongoURI)
     .then(() => console.log('Established a connection to the database'))
