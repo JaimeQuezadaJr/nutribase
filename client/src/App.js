@@ -1,7 +1,8 @@
-import logo from './logo.svg';
 import './App.css';
 
 function App() {
+  const [loggedIn, setLoggedIn] = useState(false);
+  
   return (
     <div>
       <BrowserRouter>
