@@ -25,3 +25,6 @@ const NutritionSchema = mongoose.Schema(
         timestamps: true
     }
 )
+
+const Nutrition = mongoose.model('nutrition', NutritionSchema);
+module.exports = Nutrition;
