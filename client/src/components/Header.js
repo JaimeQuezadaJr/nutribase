@@ -34,3 +34,41 @@ const Header = ({loggedIn, setLoggedIn}) => {
     })
     .catch((err) => console.log(err));
   };
+
+  return (
+    <>
+    <Navbar bg="primary" variant='dark' expand='sm' className='fixed-top'>
+      <Container>
+        <Navbar.Brand as={Link} to="/"><img
+              alt=""
+              src="/zoomed-logo.png"
+              width="30"
+              height="30"
+              className="d-inline-block align-top rounded-3"
+            />{' '}WellnessPlus</Navbar.Brand>
+        <Navbar.Toggle />
+        <Navbar.Collapse className="justify-content-end">
+          {user ? (
+              <Nav className=" justify-contend-end">
+                <Nav.Link as={Link} to="/about">About</Nav.Link>
+                <Nav.Link as={Link} to="/dashboard">Home</Nav.Link>
+                <Nav.Link onClick={onLogOut}>Logout</Nav.Link>
+            </Nav>
+          ) : (
+              <Nav className=" justify-contend-end">
+                <Nav.Link as={Link} to="/about">About</Nav.Link>
+                <Nav.Link as={Link} to="/login">Login</Nav.Link>
+                <Nav.Link as={Link} to="/register">Register</Nav.Link>
+              </Nav>
+          )}
+        
+        </Navbar.Collapse>
+      </Container>
+    </Navbar>
+    <div className={`${styles.footer} fixed-bottom`}></div>
+    </>
+    
+  );
+}
+
+export default Header;
