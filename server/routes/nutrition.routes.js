@@ -8,3 +8,4 @@ module.exports = (app) => {
     app.post('/api/nutrition', authenticate, NutritionController.createNutrition);
     app.put('/api/nutrition/:id', authenticate, NutritionController.updateNutrition);
     app.delete('/api/nutrition/:id', authenticate, NutritionController.deleteNutrition); 
+}
