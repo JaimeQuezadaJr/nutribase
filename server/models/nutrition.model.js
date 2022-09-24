@@ -7,6 +7,14 @@ const NutritionSchema = mongoose.Schema(
             required: [true, 'Goal is required'],
             minLength: [12, 'Goal description should be more than 12 characters long']
         },
+        foodName: {
+            type: String,
+            required: [true, 'Please add food name']
+        },
+        calories: {
+            type: Number,
+            required: [true, 'Please add food calories']
+        },
         completedBy: {
             type: Date,
             required: [true, 'Please add goal completion date'],
