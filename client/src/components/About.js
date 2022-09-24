@@ -39,4 +39,4 @@ const About = ({setLoggedIn}) => {
     </Container>
   )
 }
-export default About
+export default About;
