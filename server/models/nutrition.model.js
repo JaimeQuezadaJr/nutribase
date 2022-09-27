@@ -15,6 +15,10 @@ const NutritionSchema = mongoose.Schema(
             type: Number,
             required: [true, 'Please add food calories']
         },
+        protein: {
+            type: Number,
+            required: [true, 'Please add protein amount']
+        },
         completedBy: {
             type: Date,
             required: [true, 'Please add goal completion date'],
