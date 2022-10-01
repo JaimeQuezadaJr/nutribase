@@ -6,6 +6,10 @@ const GoalSchema = mongoose.Schema (
             type: Number,
             required: [true, 'Please enter desired max daily calories']
         },
+        foodTime: {
+            type: String,
+            required: [true, 'Please enter breakfast, lunch or dinner']
+        },
         createdBy: {
             type: mongoose.Schema.Types.ObjectId,
             ref: 'User'
