@@ -10,6 +10,10 @@ const GoalSchema = mongoose.Schema (
             type: String,
             required: [true, 'Please enter breakfast, lunch or dinner']
         },
+        foodType: {
+            type: String,
+            required: [true, 'Please enter food type']
+        },
         createdBy: {
             type: mongoose.Schema.Types.ObjectId,
             ref: 'User'
