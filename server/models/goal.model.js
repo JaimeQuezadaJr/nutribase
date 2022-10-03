@@ -14,6 +14,10 @@ const GoalSchema = mongoose.Schema (
             type: String,
             required: [true, 'Please enter food type']
         },
+        waterIntake: {
+            type: Number,
+            required: [true, 'Please enter water amount']
+        },
         createdBy: {
             type: mongoose.Schema.Types.ObjectId,
             ref: 'User'
