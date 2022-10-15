@@ -36,7 +36,7 @@ const UserLogin = ({ setLoggedIn }) => {
       <Form onSubmit={handleSubmit} className="form"> 
         <Container>
           <Form.Group className="mb-3 col-md-4" controlId="formBasicEmail">
-            <Form.Label>Email address</Form.Label>
+            <Form.Label>Email</Form.Label>
             <Form.Control type="email" name="email" placeholder="Enter email" value={user.email} onChange={handleChange} required />
             <Form.Text className="text-muted">
               We'll never share your email with anyone else.
