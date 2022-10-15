@@ -23,6 +23,10 @@ const UserSchema = mongoose.Schema(
             type: Number,
             required: [true, 'Please enter weight']
     },
+        race: {
+            type: String,
+        
+    },
         email: {
         type: String,
         required: [true, 'Email is required'],
