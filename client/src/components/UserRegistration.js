@@ -53,7 +53,7 @@ const UserRegistration = ({ setLoggedIn }) => {
               {errors.age && <Form.Text className='text-danger'>{errors.age.message}</Form.Text>}
             </Form.Group>
             <Form.Group className="mb-3 col-md-4" controlId="formBasicEmail">
-              <Form.Label>Email address</Form.Label>
+              <Form.Label>Email</Form.Label>
               <Form.Control type="email" name='email' placeholder="Enter email" value={user.email} onChange={handleChange} required />
               
               <Form.Text className="text-muted">
