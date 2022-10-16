@@ -28,7 +28,7 @@ const About = ({setLoggedIn}) => {
   return (
     <Container className='form mb-5'>
     <Card className='col-lg-6'>
-      <Card.Header as="h5">Become more in tune with yourself!</Card.Header>
+      <Card.Header as="h5">A better way to log your nutritional information!</Card.Header>
       <Card.Body>
         <Card.Text>
         Overall mental and physical well being should be at the top of anyone's priorities. Finding that balance will help you feel better. This platform facilitates your ability to track your nutrition, fitness, and mindfulness goals. It allows you to neatly organize your goals so you can commit to complete them by a certain date. Being able to track, commit, and achieve specific target objectives will allow you to be better in tune with yourself. The intent is to provide a platform where you can take some small steps to achieving your desired self equilibrium.
